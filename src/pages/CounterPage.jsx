@@ -4,7 +4,7 @@ import { increaseCounter } from "../store/counterReducer";
 
 const CounterPage = () => {
   const [num, setNum] = useState(1);
-  const value = useSelector((state) => state.count);
+  const value = useSelector((state) => state.count.val);
   const dispatch = useDispatch();
 
   const increase = () => {
